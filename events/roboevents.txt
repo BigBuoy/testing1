@@ -1,0 +1,51 @@
+add_namespace = roborising
+
+country_event = {
+	id = robot.1
+	title = robot.1.t
+	desc = robot.1.d
+	picture = GFX_robot_event_competition
+	
+	is_triggered_only = no
+
+	trigger = {
+		tag = GAY
+		AND + {
+			date > 1936.2.1
+		}
+	}
+	
+	mean_time_to_happen = {days = 7}
+
+	option = { # DERT SPECIAL
+		name = DERT_IS_TRASH
+		ai_chance = { factor = 100 }
+		add_political_power = 100
+		}
+	}
+}
+#######
+country_event = {
+	id = robot.2
+	title = robot.2.t
+	desc = robot.2.d
+	picture = GFX_robot_event_competition
+	
+	is_triggered_only = no
+
+	trigger = {
+		tag = GAY
+		AND + {
+			date > 1936.10.10
+		}
+	}
+	
+	mean_time_to_happen = {days = 7}
+
+	option = { # DERT SPECIAL
+		name = DERT_IS_TRASH
+		ai_chance = { factor = 100 }
+		transfer_state = 119
+		}
+	}
+}
