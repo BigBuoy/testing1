@@ -100,13 +100,12 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Willem Cramer"
+	name = "Nathan Geers"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "Anthony_Leader.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		dictator
 		warmonger
 	}
 }
