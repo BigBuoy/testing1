@@ -1,4 +1,4 @@
-capital = 282
+capital = 362
 
 #oob = "GAY_1936"
 
@@ -100,13 +100,14 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Matthew Kinect"
+	name = "Willem Cramer"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Matt_Leader.dds"
+	picture = "Anthony_Leader.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		
+		dictator
+		warmonger
 	}
 }
 
@@ -140,7 +141,7 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Anime Girl"
+	name = "Ethan Cramer"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
 	traits = { desert_fox }
 	skill = 8
