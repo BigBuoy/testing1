@@ -364,7 +364,7 @@ focus_tree = {
 		id = revenge_of_africa
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = ETN_BigBlackBrains }
-		x = 12
+		x = 2
 		y = 4
 		cost = 15
 
