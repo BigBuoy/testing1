@@ -751,4 +751,36 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = ETN_claim_libya
+		icon = GFX_goal_generic_forceful_treaty
+		available = { is_puppet = no }
+		x = 16
+		y = 16
+		cost = 10
+		bypass = {
+			448 = { add_claim_by = ETN }
+			449 = { add_claim_by = ETN }
+			450 = { add_claim_by = ETN }
+			451 = { add_claim_by = ETN }
+			663 = { add_claim_by = ETN }
+			661 = { add_claim_by = ETN }
+			662 = { add_claim_by = ETN }
+		}
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				date < 1945.1.1
+			}
+		}	
+		completion_reward = {
+			448 = { add_claim_by = ETN }
+			449 = { add_claim_by = ETN }
+			450 = { add_claim_by = ETN }
+			451 = { add_claim_by = ETN }
+			663 = { add_claim_by = ETN }
+			661 = { add_claim_by = ETN }
+			662 = { add_claim_by = ETN }
+		}
+	}
