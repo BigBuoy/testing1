@@ -548,8 +548,8 @@ focus_tree = {
 	focus = {
 		id = adding_jewels_to_our_spears
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 3
-		y = 4
+		x = 9
+		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1097,7 +1097,7 @@ focus_tree = {
 		prerequisite = { focus = new_roads }
 		prerequisite = { rivaling_the_asians }
 		x = 2
-		y = 5
+		y = 6
 		cost = 10
 
 		available_if_capitulated = yes
