@@ -26,7 +26,7 @@ focus_tree = {
 		}		
 	}
 	focus = {
-		id = infrastructure_effort
+		id = dirt_path
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ETN_GetFood }
 		x = 2
@@ -348,7 +348,7 @@ focus_tree = {
 		prerequisite = { focus = ETN_MakeFactoriesForSlaves }
 		prerequisite = { focus = ETN_SpearFactory }
 		x = 2
-		y = 3
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -365,7 +365,7 @@ focus_tree = {
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = ETN_BigBlackBrains }
 		x = 2
-		y = 4
+		y = 3
 		cost = 15
 
 		available_if_capitulated = yes
@@ -391,7 +391,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = revenge_of_africa }
 		x = 2
-		y = 5
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -483,7 +483,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = revenge_of_africa }
 		x = 0
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 9
@@ -546,7 +546,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = creating_high_quality_spears
+		id = adding_jewels_to_our_spears
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 9
 		y = 0
@@ -565,11 +565,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ETN_SpearFactory
+		id = rivaling_the_asians
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ETN_GetFood }
+		prerequisite = { focus = revenge_of_africa }
 		x = 4
-		y = 5
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
