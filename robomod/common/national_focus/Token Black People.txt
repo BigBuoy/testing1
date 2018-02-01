@@ -344,7 +344,7 @@ focus_tree = {
 		id = ETN_BigBlackBrains
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = ETN_MakeAfricaGreatAgain }
+		prerequisite = { focus = dirt_path }
 		prerequisite = { focus = ETN_MakeFactoriesForSlaves }
 		prerequisite = { focus = ETN_SpearFactory }
 		x = 2
@@ -723,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = commie_box
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = creating_high_quality_spears }
+		prerequisite = { focus = adding_jewels_to_our_spears }
 		x = 9
 		y = 1
 		cost = 10
@@ -942,6 +942,8 @@ focus_tree = {
 	focus = {
 		id = national_african_airport
 		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = weeb_planes }
+		prerequisite = { focus = spirit_of_dillon }
 		x = 13
 		y = 2
 		cost = 10
@@ -979,6 +981,9 @@ focus_tree = {
 						}
 					}
 				}
+			}
+		}
+	}			
 	focus = {
 		id = big_dick_ships
 		icon = GFX_goal_generic_navy_battleship
@@ -1002,7 +1007,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1214,7 +1218,7 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = not_just_cheap_labor }
 		prerequisite = { focus = new_roads }
-		prerequisite = { rivaling_the_asians }
+		prerequisite = { focus = rivaling_the_asians }
 		x = 2
 		y = 6
 		cost = 10
