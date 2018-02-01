@@ -814,6 +814,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = avoid_the_water
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -840,7 +841,46 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+		focus = {
+		id = national_african_airport
+		icon = GFX_goal_generic_build_airforce
+		x = 13
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}			
+		}
+		completion_reward = {
+			air_experience = 50
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
 		completion_reward = {
 			navy_experience = 25
 			if = {
