@@ -1856,7 +1856,7 @@
  continuous_boost_freedom_desc:0 "By reorganizing our colonial bureaucracy and recruiting native administrators, we will, in time, be able to take charge of our own affairs."
  continuous_restrict_freedom:0 "Suppress Subjects"
  continuous_restrict_freedom_desc:0 "Our colonial subjects have gotten rather silly ideas about things like "self-determination" or "national independence". It is time to disabuse them of these notions."
- ##########################################
+ ##########################################Ethan
  Feed_Our_People:0 "Feed Our People"
  Feed_Our_People_desc:0 "The first step towards making Africa great again is making sure that they cant use our children for those sad TV commercials"
  creating_high_quality_spears:0 "Creating High Qaulity Spears"
@@ -1895,3 +1895,5 @@
  dirt_path_desc:0 "We can make a dirt path through Africa, mostly because we cant afford concrete yet, but that day will come soon."
  ETN_BigBlackBrains:0 "Big Black Brains"
  ETN_BigBlackBrains_desc:0 "Our brains our big, but not as big as our ding a lings, which are still not as big as Doug."
+ rivaling_the_asians:0 "Rivaling the Asians"
+ rivaling_the_asians_desc:0 "With the amount of factories being built, Africa is basically Asia, but we dont even pay our workers."
