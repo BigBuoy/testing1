@@ -1073,15 +1073,6 @@ focus_tree = {
 		x = 16
 		y = 16
 		cost = 10
-		bypass = {
-			448 = { add_claim_by = ETN }
-			449 = { add_claim_by = ETN }
-			450 = { add_claim_by = ETN }
-			451 = { add_claim_by = ETN }
-			663 = { add_claim_by = ETN }
-			661 = { add_claim_by = ETN }
-			662 = { add_claim_by = ETN }
-		}
 		ai_will_do = {
 			factor = 10	
 			modifier = {
