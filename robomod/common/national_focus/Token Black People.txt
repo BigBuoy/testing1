@@ -1063,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = send_our_slaves
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 22
+		x = 25
 		y = 0
 		cost = 10
 
@@ -1102,8 +1102,8 @@ focus_tree = {
 	focus = {
 		id = hold_my_weeb
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = big_ship_style }
-		x = 20
+		prerequisite = { focus = big_dick_ships }
+		x = 21
 		y = 1
 		cost = 10
 
@@ -1188,7 +1188,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ETN_claim_libya
 		icon = GFX_goal_generic_forceful_treaty
