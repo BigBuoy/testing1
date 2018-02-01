@@ -1153,7 +1153,7 @@ focus_tree = {
 	focus = {
 		id = dick_destroyers
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = submarine_effort }
+		prerequisite { focus = big_ship_style }
 		mutually_exclusive = { focus = phallic_subs }
 		x = 19
 		y = 3
