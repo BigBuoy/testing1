@@ -1009,7 +1009,7 @@ focus_tree = {
 				name = capital_ships_bonus
 				bonus = 0.5
 				ahead_reduction = 1
-				uses = 1
+				uses = 3
 				technology = basic_battlecruiser
 				technology = basic_battleship
 				technology = improved_battleship
@@ -1073,7 +1073,85 @@ focus_tree = {
 		id = phallic_subs
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = big_ship_style }
+		mutually_exclusive = { focus = dick_destroyers }
+
 		x = 18
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+	}	
+	focus = {
+		id = hold_my_weeb
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = big_ship_style }
+		x = 20
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 3 
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	focus = {
+		id = dick_destroyers
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = submarine_effort }
+		mutually_exclusive = { focus = phallic_subs }
+		x = 19
 		y = 3
 		cost = 10
 
@@ -1095,17 +1173,18 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ss_bonus
+				name = dd_bonus
 				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
 			}
 		}
 	}
+
 	focus = {
 		id = ETN_claim_libya
 		icon = GFX_goal_generic_forceful_treaty
