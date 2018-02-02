@@ -1230,12 +1230,66 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = double_dillon
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = not_just_cheap_labor }
+		prerequisite = { focus = new_roads }
+		prerequisite = { focus = rivaling_the_asians }
+		x = 2
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+	focus = {
+		id = ETN_claim_libya
+		icon = GFX_goal_generic_forceful_treaty
+		available = { is_puppet = no }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				date < 1945.1.1
+			}
+		}	
+		completion_reward = {
+			448 = { add_claim_by = ETN }
+			449 = { add_claim_by = ETN }
+			450 = { add_claim_by = ETN }
+			451 = { add_claim_by = ETN }
+			663 = { add_claim_by = ETN }
+			661 = { add_claim_by = ETN }
+			662 = { add_claim_by = ETN }
+		}
+	}
+	focus = {
 		id = dick_destroyers
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite { focus = big_ship_style }
-		mutually_exclusive = { focus = phallic_subs }
+		prerequisite = { focus = big_dick_ships }
+		mutually_excluive = { focus = phallic_subs }
 		x = 20
-		y = 3
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1264,61 +1318,6 @@ focus_tree = {
 				technology = basic_destroyer
 				technology = improved_destroyer
 				technology = advanced_destroyer
-			}
-		}
-	}
-	focus = {
-		id = ETN_claim_libya
-		icon = GFX_goal_generic_forceful_treaty
-		available = { is_puppet = no }
-		x = 10
-		y = 10
-		cost = 10
-		ai_will_do = {
-			factor = 10	
-			modifier = {
-				factor = 0
-				date < 1945.1.1
-			}
-		}	
-		completion_reward = {
-			448 = { add_claim_by = ETN }
-			449 = { add_claim_by = ETN }
-			450 = { add_claim_by = ETN }
-			451 = { add_claim_by = ETN }
-			663 = { add_claim_by = ETN }
-			661 = { add_claim_by = ETN }
-			662 = { add_claim_by = ETN }
-		}
-	}
-	
-	focus = {
-		id = double_dillon
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = not_just_cheap_labor }
-		prerequisite = { focus = new_roads }
-		prerequisite = { focus = rivaling_the_asians }
-		x = 2
-		y = 6
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = jet_rocket_bonus
-				ahead_reduction = 0.5
-				uses = 2
-				category = rocketry
-				category = jet_technology
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
 			}
 		}
 	}
