@@ -565,6 +565,85 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = training_in_the_sahara
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = adding_jewels_to_our_spears }
+		x = 10
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = big_brown_guns
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = training_in_the_sahara }
+		x = 10
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = uncle_willem_shares_his_love
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = commie_box }
+		x = 9
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = not_like_the_migrants
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = dick_destroyers }
+		x = 19
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = marines
+				technology = marines2
+			}
+		}
+	}
+	focus = {
 		id = rivaling_the_asians
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = revenge_of_africa }
@@ -1192,8 +1271,8 @@ focus_tree = {
 		id = ETN_claim_libya
 		icon = GFX_goal_generic_forceful_treaty
 		available = { is_puppet = no }
-		x = 16
-		y = 16
+		x = 10
+		y = 10
 		cost = 10
 		ai_will_do = {
 			factor = 10	
