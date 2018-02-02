@@ -568,7 +568,7 @@ focus_tree = {
 		id = training_in_the_sahara
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = adding_jewels_to_our_spears }
-		x = 10
+		x = 7
 		y = 1
 		cost = 10
 
@@ -588,7 +588,7 @@ focus_tree = {
 		id = big_brown_guns
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = training_in_the_sahara }
-		x = 10
+		x = 7
 		y = 2
 		cost = 10
 
@@ -608,7 +608,7 @@ focus_tree = {
 		id = uncle_willem_shares_his_love
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = commie_box }
-		x = 9
+		x = 6
 		y = 2
 		cost = 10
 
@@ -1183,7 +1183,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = big_dick_ships }
 		x = 21
-		y = 1
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1234,7 +1234,7 @@ focus_tree = {
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite { focus = big_ship_style }
 		mutually_exclusive = { focus = phallic_subs }
-		x = 19
+		x = 20
 		y = 3
 		cost = 10
 
@@ -1291,6 +1291,7 @@ focus_tree = {
 			662 = { add_claim_by = ETN }
 		}
 	}
+	
 	focus = {
 		id = double_dillon
 		icon = GFX_focus_rocketry
