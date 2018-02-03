@@ -1497,7 +1497,7 @@ focus_tree = {
 		id = dick_destroyers
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = big_dick_ships }
-		mutually_excluisve = { focus = phallic_subs }
+		mutually_exclusive = { focus = phallic_subs }
 		x = 20
 		y = 3
 		cost = 10
