@@ -1569,19 +1569,6 @@ focus_tree = {
 			}
 		}
 	}
-		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-			}
-		}
-	}
 	focus = {
 		id = fuck_me
 		icon = GFX_goal_generic_secret_weapon
@@ -1630,7 +1617,6 @@ focus_tree = {
 			449 = { add_claim_by = ETN }
 			450 = { add_claim_by = ETN }
 			451 = { add_claim_by = ETN }
-			}
 		}
 	}
 }	
