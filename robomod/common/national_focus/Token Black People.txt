@@ -1497,9 +1497,9 @@ focus_tree = {
 		id = dick_destroyers
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = big_dick_ships }
-		mutually_excluive = { focus = phallic_subs }
+		mutually_excluisve = { focus = phallic_subs }
 		x = 20
-		y = 4
+		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1585,7 +1585,9 @@ focus_tree = {
 	focus = {
 		id = double_dillon
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = infrastructure_effort_2 }
+		prerequisite = { focus = rivaling_the_asians }
+		prerequisite = { focus = new_roads }
+		prerequisite = { focus = not_just_cheap_labor }
 		x = 3
 		y = 5
 		cost = 10
