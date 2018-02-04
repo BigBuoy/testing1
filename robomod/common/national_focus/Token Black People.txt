@@ -802,7 +802,7 @@ focus_tree = {
 	focus = {
 		id = robotic_slaves
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = fuck_me }
+		prerequisite = { focus = double_dillon }
 		x = 4
 		y = 6
 		cost = 10
@@ -958,7 +958,7 @@ focus_tree = {
 	focus = {
 		id = minecraft_crafting
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = fuck_me }
+		prerequisite = { focus = double_dillon }
 		x = 0
 		y = 6
 		cost = 10
@@ -1025,7 +1025,7 @@ focus_tree = {
 	focus = {
 		id = self_driving_slaves
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = fuck_me }
+		prerequisite = { focus = double_dillon }
 		x = 2
 		y = 6
 		cost = 10
@@ -1570,12 +1570,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = fuck_me
+		id = double_dillon
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = rivaling_the_asians }
 		prerequisite = { focus = new_roads }
 		prerequisite = { focus = not_just_cheap_labor }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 
