@@ -33,35 +33,30 @@ division= {
 		division_template = "Spear Throwers"
 		start_experience_factor = 0.3
 	}
-}
 division= {	
 		name = "Spear Throwers"
 		location = 4129
 		division_template = "Spear Throwers"
 		start_experience_factor = 0.3
 	}
-}
 division= {	
 		name = "Spear Throwers"
 		location = 4129
 		division_template = "Spear Throwers"
 		start_experience_factor = 0.3
 	}
-}
 division= {	
 		name = "Spear Throwers"
 		location = 4129
 		division_template = "Spear Throwers"
 		start_experience_factor = 0.3
 	}
-}
 division= {	
 		name = "Spear Throwers"
 		location = 4199
 		division_template = "Spear Throwers"
 		start_experience_factor = 0.3
 	}
-}
 division= {	
 		name = "Spear Throwers"
 		location = 4199

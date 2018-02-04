@@ -608,7 +608,7 @@ focus_tree = {
 		id = uncle_willem_shares_his_love
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = commie_box }
-		x = 6
+		x = 9
 		y = 2
 		cost = 10
 
@@ -620,6 +620,26 @@ focus_tree = {
 				ahead_reduction = 0.5
 				uses = 1
 				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = steel_spears
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = big_brown_guns }
+		x = 7
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
 			}
 		}
 	}
