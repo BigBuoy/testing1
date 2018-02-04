@@ -1613,7 +1613,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = claim_libya
+		id = ETN_claim_libya
 		icon = GFX_goal_generic_forceful_treaty
 		available = { is_puppet = no }
 		x = 10
