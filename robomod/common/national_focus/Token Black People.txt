@@ -1637,6 +1637,9 @@ focus_tree = {
 			449 = { add_claim_by = ETN }
 			450 = { add_claim_by = ETN }
 			451 = { add_claim_by = ETN }
+			662 = { add_claim_by = ETN }
+			663 = { add_claim_by = ETN }
+			661 = { add_claim_by = ETN }
 		}
 	}
 }	
