@@ -58,7 +58,7 @@ focus_tree = {
 		id = GRG_capital_ships
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = GRG_martin_hug }
-		mutually_exclusive = { focus = GRG_carrier_effort }
+		mutually_exclusive = { focus = GRG_carrier_effort } 
 		x = 6
 		y = 4
 		cost = 10
