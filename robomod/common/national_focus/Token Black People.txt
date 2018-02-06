@@ -685,8 +685,8 @@ focus_tree = {
 		id = not_like_the_migrants
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = dick_destroyers }
-		x = 19
-		y = 5
+		x = 20
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1632,7 +1632,7 @@ focus_tree = {
 		id = water_weebs
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = hold_my_weeb }
-		x = 21
+		x = 22
 		y = 3
 		cost = 10
 
@@ -1670,7 +1670,7 @@ focus_tree = {
 		id = moar_ships
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = phallic_subs focus = dick_destroyers }
-		x = 18
+		x = 19
 		y = 4
 		cost = 10
 
