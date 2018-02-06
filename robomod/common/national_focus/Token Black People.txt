@@ -606,9 +606,9 @@ focus_tree = {
 	focus = {
 		id = quick_maths
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = big_brown_guns }
+		prerequisite = { focus = steel_spears }
 		x = 7
-		y = 2
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1671,7 +1671,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = phallic_subs focus = dick_destroyers }
 		x = 19
-		y = 4
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
