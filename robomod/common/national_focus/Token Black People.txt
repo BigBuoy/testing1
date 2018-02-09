@@ -1837,5 +1837,582 @@ focus_tree = {
 			661 = { add_claim_by = ETN }
 		}
 	}
+	focus = {
+		id = the_political_sphere
+		icon = GFX_goal_tripartite_pact
+		x = 34
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = political_chaos
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = the_political_sphere}
+		mutually_exclusive = {focus = passive_change}
+		x = 33
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = political_chaos_idea
+		}
+	}
+	
+	focus = {
+		id = passive_change
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {focus = the_political_sphere}
+		mutually_exclusive = {focus = political_chaos}
+		x = 35
+		y = 1
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = nationalism
+		icon = GFX_goal_support_fascism
+		prerequisite = {focus = political_chaos focus = passive_change}
+		mutually_exclusive = {focus = communism}
+		mutually_exclusive = {focus = liberalism}
+		x = 30
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {ideology = fascism popularity = 0.4}
+			add_ideas = nationalism_idea
+		}
+	}
+	
+	focus = {
+		id = militarism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = nationalism}
+		x = 29
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = militarism_idea
+		}
+	}
+	
+	focus = {
+		id = paramilitarism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = militarism}
+		x = 29
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = paramilitarism_idea
+		}
+	}
+	
+	focus = {
+		id = high_command_staff
+		icon = GFX_goal_generic_cavalry
+		prerequisite = {focus = paramilitarism}
+		x = 29
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = high_command_staff_idea
+		}
+	}
+	
+	focus = {
+		id = military_occupation
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {focus = high_command_staff}
+		x = 29
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = military_occupation_idea
+		}
+	}
+	
+	focus = {
+		id = domestic_affairs
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {focus = nationalism}
+		x = 31
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = military_youth
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = {focus = domestic_affairs}
+		x = 31
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = military_youth_ideas
+		}
+	}
+	
+	focus = {
+		id = suppress_political_opponents
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = {focus = military_youth}
+		x = 31
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = suppress_political_opponents_ideas
+		}
+	}
+	
+	focus = {
+		id = art_of_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = suppress_political_opponents}
+		x = 31
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = art_of_propaganda_ideas
+		}
+	}
+	
+	focus = {
+		id = ancestral_legacy
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = {focus = art_of_propaganda focus = military_occupation}
+		x = 30
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = ancestral_legacy_idea
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = national_colleges
+		icon = GFX_focus_research
+		prerequisite = {focus = ancestral_legacy}
+		x = 30
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = communism
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = political_chaos focus = passive_change}
+		mutually_exclusive = {focus = nationalism}
+		mutually_exclusive = {focus = liberalism}
+		x = 34
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {ideology = communism popularity = 0.4}
+			add_ideas = communism_idea
+		}
+	}
+	
+	focus = {
+		id = industrialization
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = communism}
+		x = 33
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = industrialization_idea
+		}
+	}
+	
+	focus = {
+		id = collective_farms
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = industrialization}
+		x = 33
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = collective_farms_idea
+		}
+	}
+	
+	focus = {
+		id = workers_revolution
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = {focus = collective_farms}
+		x = 33
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = workers_revolution_idea
+		}
+	}
+	
+	focus = {
+		id = political_commissars
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {focus = workers_revolution}
+		x = 33
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = political_commissars_idea
+		}
+	}
+	
+	focus = {
+		id = egalitarian_ethics
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {focus = communism}
+		x = 35
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = egalitarian_ethics_idea
+		}
+	}
+	
+	focus = {
+		id = great_patriotic_war
+		icon = GFX_goal_generic_defence
+		prerequisite = {focus = egalitarian_ethics}
+		x = 35
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = great_patriotic_war_idea
+		}
+	}
+	
+	focus = {
+		id = socialist_schools
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {focus = great_patriotic_war}
+		x = 35
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = socialist_schools_idea
+		}
+	}
+	
+	focus = {
+		id = socialist_realism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = socialist_schools}
+		x = 35
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = socialist_realism_idea
+		}
+	}
+	
+	focus = {
+		id = workers_of_the_world_unite
+		icon = GFX_goal_support_fourth_int
+		prerequisite = {focus = socialist_realism focus = political_commissars}
+		x = 34
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = workers_of_the_world_unite_idea
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = socialist_science
+		icon = GFX_focus_research
+		prerequisite = {focus = workers_of_the_world_unite}
+		x = 34
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = liberalism
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = political_chaos focus = passive_change}
+		mutually_exclusive = {focus = nationalism}
+		mutually_exclusive = {focus = communism}
+		x = 38
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = 0.4}
+			add_ideas = liberalism_idea
+		}
+	}
+	
+	focus = {
+		id = neutrality
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {focus = liberalism}
+		mutually_exclusive = {focus = interventionism}
+		x = 37
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+	}
+	
+	focus = {
+		id = armed_neutrality
+		icon = GFX_goal_generic_defence
+		prerequisite = {focus = neutrality}
+		x = 37
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = armed_neutrality_idea
+		}
+	}
+	
+	focus = {
+		id = interventionism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {focus = liberalism}
+		mutually_exclusive = {focus = neutrality}
+		x = 39
+		y = 3
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = interventionism_idea
+		}
+	}
+	
+	focus = {
+		id = volunteer_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = interventionism}
+		x = 39
+		y = 4
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = volunteer_corps_idea
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	
+	focus = {
+		id = free_market
+		icon = GFX_goal_generic_trade
+		prerequisite = {focus = volunteer_corps focus = armed_neutrality}
+		x = 37
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = free_market_idea
+		}
+	}
+	
+	focus = {
+		id = public_works_projects
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {focus = free_market}
+		x = 37
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = public_works_projects_idea
+		}
+	}
+	
+	focus = {
+		id = free_speech
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = volunteer_corps focus = armed_neutrality}
+		x = 39
+		y = 5
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = free_speech_idea
+		}
+	}
+	
+	focus = {
+		id = constitutionalism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = {focus = free_speech}
+		x = 39
+		y = 6
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = constitutionalism_idea
+		}
+	}
+	
+	focus = {
+		id = freedom_isnt_free
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = constitutionalism focus = public_works_projects}
+		x = 38
+		y = 7
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = freedom_isnt_free_idea
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	
+	focus = {
+		id = public_science_investment
+		icon = GFX_focus_research
+		prerequisite = {focus = freedom_isnt_free}
+		x = 38
+		y = 8
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+}
 }	
 	
